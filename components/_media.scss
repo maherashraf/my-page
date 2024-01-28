@@ -1,0 +1,17 @@
+.media {
+  justify-content: center;
+  align-items: center;
+}
+.media__video {
+  max-width: 100%;
+}
+
+.video-loop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.088;
+  z-index: -1;
+}

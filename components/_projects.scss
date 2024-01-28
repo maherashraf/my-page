@@ -1,0 +1,31 @@
+.projects__mian {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 7rem;
+  row-gap: 7.4rem;
+}
+.projects__data {
+  align-self: center;
+}
+.projects__pic {
+  box-shadow: 0 0 0 0.02rem black;
+  max-width: 100%;
+}
+.porjects__details {
+  line-height: 1.5;
+}
+.porjects__links {
+  color: var(--color-darker-blue);
+  margin-top: 1rem;
+  font-family: var(--font-family-poppins);
+  font-weight: var(--font-weight-medium);
+}
+.porjects__links::after {
+  content: "";
+  width: 1.4rem;
+  height: 1.4rem;
+  background-image: url(/images/external-icon.png);
+  display: inline-block;
+  background-size: contain;
+  margin-left: 0.5rem;
+}

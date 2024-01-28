@@ -1,0 +1,88 @@
+.bio {
+  column-gap: 7.4rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+.bio__heading {
+  font-size: var(--font-size-70);
+  font-weight: var(--font-weight-bold);
+}
+.bio__objective {
+  font-family: var(--font-family-poppins);
+  font-weight: var(--font-weight-regular);
+  margin: 3rem 0 8rem;
+  font-size: var(--font-size-20);
+}
+.bio__almdrasas {
+  color: var(--color-green);
+}
+.bio__linkedin {
+  color: var(--color-blue);
+}
+.bio__Facebook {
+  color: var(--color-darker-blue);
+}
+.bio__youtube {
+  color: var(--color-red);
+}
+.bio__Twitter {
+  color: var(--color-light-blue);
+}
+
+.bio__name {
+  font-weight: var(--font-weight-semi-bold);
+}
+
+.bio__links {
+  font-size: 2.4rem;
+  font-weight: var(--font-weight-semi-bold);
+  text-decoration: none;
+}
+
+.bio__say--hi {
+  background-color: var(--color-link-bg);
+  color: var(--color-white);
+  padding: 0.7rem 4.7rem;
+}
+.find-out-link {
+  margin-inline: 1.4rem;
+  padding: 0.7rem 0;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0.5rem);
+  }
+  35% {
+    transform: translateY(-0.5rem);
+  }
+  70% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.bio__arow {
+  display: inline-block;
+  animation: jump 1s alternate infinite;
+}
+.bio__pic-content {
+  display: flex;
+  position: relative;
+  align-items: flex-end;
+  justify-self: end;
+}
+
+.bio__pic-content::before {
+  content: "";
+  width: 100%;
+  height: 42rem;
+  background-color: var(--color-box-img);
+  position: absolute;
+  z-index: -1;
+  border-radius: 3rem;
+}
+
+.bio__pic {
+  width: 39rem;
+}
